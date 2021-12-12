@@ -39,7 +39,7 @@ int main() {
 			cursor++;
 		}
 	}
-	for (int i = 0; i < n; i++) { // * /
+	for (int i = 0; i < n; i++) {  // * /
 		if (vecOperatii[i] == 2) {
 			vecOperanzi[i+1] *= vecOperanzi[i];
 		} else if (vecOperatii[i] == 3) {

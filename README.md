@@ -1,4 +1,4 @@
-Task1:
+# Task1:
 
 se citeste de la tastatura instructiune (inst), si se sifteaza de 29 ori + 1 ca sa se obtina primii 3 biti (n).
 
@@ -12,7 +12,7 @@ n op1 op2 op3 .. dim
 
 8 / + + * - * / * 2
 
-Task2:
+# Task2:
 
 la fel ca in taskul precedent, aflam n-ul dupa ce citim instructiunea de la tastatura prin shiftari de biti.
 
