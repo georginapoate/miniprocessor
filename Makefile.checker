@@ -1,0 +1,34 @@
+.PHONY: all clean run pack build-pre build-post
+
+all: build-pre run build-post
+
+build-pre:
+
+build-post:
+
+run: build
+	@./check.sh
+
+build: task1 task2 task3 task4
+
+task1: Makefile
+	make -f Makefile task1
+
+task2: Makefile
+	make -f Makefile task2
+
+task3: Makefile
+	make -f Makefile task3
+
+task4: Makefile
+	make -f Makefile task4
+
+pack:
+	zip -r miniprocesor.zip tests/ \
+	Makefile.checker \
+	check.sh run_tests.sh parse.awk install-linters.sh
+
+clean:
+	rm -rf miniprocesor.zip tests-out
+	make -f Makefile clean
+
